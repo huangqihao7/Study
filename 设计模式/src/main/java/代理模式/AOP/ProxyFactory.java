@@ -34,7 +34,7 @@ public class ProxyFactory {
                             // 直接调用目标对象方法
                             result = method.invoke(target, args);
                         } else {
-                            System.out.println("开启事务...");
+                            System.out.println("开启事务......");
                             // 执行目标对象方法
                             result = method.invoke(target, args);
                             System.out.println("提交事务...");
