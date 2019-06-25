@@ -21,6 +21,7 @@ public class ProxyTest implements MethodInterceptor {
         Enhancer enhancer = new Enhancer(); // 创建加强类，用来创建动态代理类
         enhancer.setSuperclass(this.target.getClass());  // 指定代理类
         enhancer.setCallback(this); // 调用callback方法，则需要实现intercept方法进行拦截
+        System.out.println(" enhancer.setCallback(this)");
         return  enhancer.create();
     }
 
