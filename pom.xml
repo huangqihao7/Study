@@ -11,6 +11,7 @@
     <modules>
         <module>设计模式</module>
         <module>NIO</module>
+        <module>base</module>
     </modules>
 
     <dependencies>
